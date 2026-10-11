@@ -3,146 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Ishini Gunathilaka | E-Portfolio</title>
-
     <style>
         * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
         }
-
         body {
-            background: #f2f7fc;
-            color: #263746;
+            font-family: Arial, sans-serif;
+            background: #f2f5fa;
+            color: #222;
             line-height: 1.7;
         }
-
         header {
-            background: #17324d;
+            background: #102a43;
             color: white;
             text-align: center;
-            padding: 22px;
+            padding: 35px 15px;
         }
-
         header h1 {
-            color: white;
+            font-size: 32px;
+            margin-bottom: 8px;
         }
-
+        header p {
+            color: #d9e8f5;
+        }
         nav {
-            margin-top: 12px;
+            background: #1769aa;
+            padding: 12px;
+            text-align: center;
         }
-
         nav a {
             color: white;
             text-decoration: none;
-            margin: 8px;
+            margin: 0 12px;
+            font-weight: bold;
         }
-
         nav a:hover {
-            color: #8edcff;
+            text-decoration: underline;
         }
-
-        .hero {
-            text-align: center;
-            padding: 45px 20px;
-            background: #dceef9;
-        }
-
-        .hero img {
-            width: 180px;
-            height: 210px;
-            object-fit: cover;
-            border-radius: 15px;
-            border: 4px solid white;
-            margin-bottom: 15px;
-        }
-
-        .hero h2 {
-            font-size: 30px;
-            color: #17324d;
-        }
-
-        .hero p {
-            margin-top: 8px;
-        }
-
-        .button {
-            display: inline-block;
-            background: #2878a5;
-            color: white;
-            padding: 10px 18px;
-            margin: 15px 5px 0;
-            border-radius: 7px;
-            text-decoration: none;
-        }
-
-        .button:hover {
-            background: #17324d;
-        }
-
-        main {
+        .container {
             max-width: 900px;
-            margin: auto;
-            padding: 20px;
+            margin: 25px auto;
+            padding: 0 15px;
         }
-
         section {
             background: white;
-            margin: 22px 0;
+            margin-bottom: 20px;
             padding: 25px;
             border-radius: 12px;
-            box-shadow: 0 3px 12px #00000010;
-            scroll-margin-top: 20px;
+            box-shadow: 0 3px 10px #00000010;
         }
-
-        section h2 {
-            color: #17324d;
+        h2 {
+            color: #1769aa;
+            margin-bottom: 12px;
+            border-bottom: 2px solid #e2eaf2;
+            padding-bottom: 6px;
+        }
+        .profile {
+            text-align: center;
+        }
+        .profile img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #1769aa;
             margin-bottom: 15px;
         }
-
-        .card {
-            background: #edf6fb;
-            padding: 15px;
-            margin: 12px 0;
-            border-radius: 8px;
-        }
-
         ul {
             padding-left: 22px;
         }
-
-        #contact a:not(.button) {
-            color: #2878a5;
+        .button {
+            display: inline-block;
+            background: #1769aa;
+            color: white;
+            text-decoration: none;
+            padding: 11px 18px;
+            margin: 8px 5px 0 0;
+            border-radius: 6px;
+            font-weight: bold;
         }
-
+        .button:hover {
+            background: #102a43;
+        }
         footer {
-            background: #17324d;
+            background: #102a43;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 18px;
+            margin-top: 25px;
         }
-
         @media (max-width: 600px) {
+            header h1 {
+                font-size: 25px;
+            }
             nav a {
                 display: inline-block;
-                margin: 5px;
+                margin: 5px 8px;
             }
-
-            .hero h2 {
-                font-size: 25px;
+            section {
+                padding: 18px;
             }
         }
     </style>
 </head>
-
 <body>
-
-<header>
-    <h1>Ishini Gunathilaka</h1>
-
+    <header>
+        <h1>Ishini Gunathilaka</h1>
+        <p>Student | E-Portfolio</p>
+    </header>
     <nav>
         <a href="#about">About</a>
         <a href="#education">Education</a>
@@ -150,158 +121,62 @@
         <a href="#activities">Activities</a>
         <a href="#contact">Contact</a>
     </nav>
-</header>
-
-<!-- HOME SECTION -->
-<div class="hero">
-
-    <img src="photo%20of%20mine.jpg"
-         alt="Ishini Gunathilaka">
-
-    <h2>Hello, I'm Ishini Gunathilaka</h2>
-
-    <p>Biotechnology Undergraduate</p>
-
-    <p>
-        Interested in Biotechnology, Laboratory Work
-        and Scientific Research.
-    </p>
-
-    <a class="button"
-       href="Ishini_Gunathilaka_CV%284%29.pdf"
-       target="_blank">
-        View My CV
-    </a>
-
-    <a class="button" href="#about">
-        Explore My Portfolio
-    </a>
-
-</div>
-
-<main>
-
-    <!-- ABOUT ME -->
-    <section id="about">
-        <h2>About Me</h2>
-
-        <p>
-            I am a first-year Biotechnology undergraduate
-            at the Sri Lanka Institute of Information
-            Technology (SLIIT). I am enthusiastic about
-            learning scientific techniques and gaining
-            practical experience. I value teamwork,
-            communication and critical thinking.
-        </p>
-    </section>
-
-    <!-- EDUCATION -->
-    <section id="education">
-        <h2>Education</h2>
-
-        <div class="card">
-            <h3>BSc (Hons) in Biotechnology</h3>
-            <p>Sri Lanka Institute of Information Technology</p>
-            <p>Year 1 - Semester 1</p>
-        </div>
-
-        <div class="card">
-            <h3>G.C.E. Advanced Level - 2025</h3>
-            <p>Biology - C</p>
-            <p>Chemistry - C</p>
-            <p>Physics - C</p>
-        </div>
-
-        <div class="card">
-            <h3>G.C.E. Ordinary Level - 2023</h3>
-            <p>Passed with 9 A passes.</p>
-        </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills">
-        <h2>Technical and Laboratory Skills</h2>
-
-        <ul>
-            <li>Basic Autoclave Operation</li>
-            <li>Spectrophotometry</li>
-            <li>Micropipetting</li>
-            <li>Laboratory Safety Practices</li>
-            <li>SOP Compliance</li>
-            <li>Biosafety (BSL-1/BSL-2)</li>
-            <li>Microsoft Word, Excel and PowerPoint</li>
-            <li>Basic Data Entry and Data Formatting</li>
-        </ul>
-
-        <h2 style="margin-top:20px;">Professional Skills</h2>
-
-        <ul>
-            <li>Project Management</li>
-            <li>Public Relations</li>
-            <li>Teamwork</li>
-            <li>Critical Thinking</li>
-            <li>Communication</li>
-            <li>Problem Solving</li>
-        </ul>
-    </section>
-
-    <!-- ACTIVITIES -->
-    <section id="activities">
-        <h2>Extracurricular Activities</h2>
-
-        <ul>
-            <li>Member of University Biotechnology Club</li>
-            <li>Member of University Carom Club</li>
-        </ul>
-
-        <h2 style="margin-top:20px;">Languages</h2>
-
-        <ul>
-            <li>Sinhala - Native</li>
-            <li>English - Professional</li>
-        </ul>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-
-        <p>
-            <strong>Email:</strong>
-            <a href="mailto:ishinigunathilaka2006@gmail.com">
-                ishinigunathilaka2006@gmail.com
+    <div class="container">
+        <section class="profile">
+            <img src="./photo%20of%20mine.jpg"
+                 alt="Ishini Gunathilaka">
+            <h2>Welcome to My E-Portfolio</h2>
+            <p>Hello! Welcome to my personal e-portfolio.
+               This website introduces my education, skills,
+               interests and activities.</p>
+            <a class="button"
+               href="./Ishini_Gunathilaka_CV%20%284%29.pdf"
+               target="_blank"
+               rel="noopener">
+                View My CV
             </a>
-        </p>
-
-        <p>
-            <strong>Phone:</strong>
-            +94 76 776 6930
-        </p>
-
-        <p>
-            <strong>Location:</strong>
-            Kuliyapitiya, Sri Lanka
-        </p>
-
-        <a class="button"
-           href="Ishini_Gunathilaka_CV%284%29.pdf"
-           target="_blank">
-            Open My CV
-        </a>
-
-        <a class="button"
-           href="Ishini_Gunathilaka_CV%284%29.pdf"
-           download>
-            Download My CV
-        </a>
-    </section>
-
-</main>
-
-<footer>
-    <p>©️ 2026 Ishini Gunathilaka</p>
-    <p>My E-Portfolio</p>
-</footer>
-
+            <a class="button"
+               href="./Ishini_Gunathilaka_CV%20%284%29.pdf"
+               download="Ishini_Gunathilaka_CV.pdf">
+                Download My CV
+            </a>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>My name is Ishini Gunathilaka. I am a student
+               who is interested in learning new technologies,
+               improving my knowledge and developing new skills.</p>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <p>I am currently pursuing my studies and developing
+               my knowledge in computing and information technology.</p>
+        </section>
+        <section id="skills">
+            <h2>My Skills</h2>
+            <ul>
+                <li>Basic Computer Skills</li>
+                <li>Basic Programming Knowledge</li>
+                <li>Communication</li>
+                <li>Teamwork</li>
+                <li>Willingness to Learn</li>
+            </ul>
+        </section>
+        <section id="activities">
+            <h2>Interests and Activities</h2>
+            <ul>
+                <li>Learning about new technologies</li>
+                <li>Developing computer skills</li>
+                <li>Working on academic projects</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>You can view my CV using the button above.</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2026 Ishini Gunathilaka | E-Portfolio</p>
+    </footer>
 </body>
 </html>
